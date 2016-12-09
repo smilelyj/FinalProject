@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/admin_menu_layout"
+        tools:context="org.swe.android.activities.AdminMenuActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/swe_logo_color" />
+
+    <Button
+        android:id="@+id/button_create_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button"
+        android:text="@string/button_create_survey"
+        android:textColor="@color/text_primary"
+        android:singleLine="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_deploy_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/button_deploy_survey"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_primary"
+        android:singleLine="false"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/button_create_survey"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/button_take_survey_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:text="@string/button_take_survey_text"
+        android:textColor="@color/text_primary"
+        android:singleLine="false"
+        android:layout_below="@+id/button_deploy_survey"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_view_results_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="5dp"
+        android:text="@string/button_view_results_text"
+        android:textColor="@color/text_primary"
+        android:singleLine="false"
+        android:layout_below="@+id/button_take_survey_admin"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/button_done_text"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/button_view_results_admin"
+        android:singleLine="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAdmin"
+        android:layout_above="@+id/button_create_survey"
+        android:layout_alignEnd="@+id/button_create_survey"
+        android:layout_alignParentStart="true"
+        android:hint="@string/hint_enter_survey_id"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_activation_code"
+        android:background="@drawable/button_yellow"
+        android:text="@string/button_activation_code"
+        android:layout_alignTop="@+id/image_view"
+        android:layout_alignEnd="@+id/image_view"
+        android:textColor="@color/text_secondary"
+        />
+
+
+</RelativeLayout>
+

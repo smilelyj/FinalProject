@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll_view_results"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+    android:paddingRight="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:id="@+id/listView_results"
+        android:layout_weight="0.9" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="@string/button_generate_pdf_file"
+            android:id="@+id/button_generate_pdf_file"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:background="@drawable/button_yellow"
+            />
+
+    </LinearLayout>

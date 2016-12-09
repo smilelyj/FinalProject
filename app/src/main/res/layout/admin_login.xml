@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    style="@style/AppTheme"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:clickable="true"
+    android:id= "@+id/admin_login_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/button_admin_login"
+        android:id="@+id/adminLogin"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/textUsername"
+        android:textAllCaps="true"
+        android:hint="@string/hint_username"
+        android:hapticFeedbackEnabled="true"
+        android:textColor="@color/text_icons"
+        android:layout_below="@+id/adminLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/textPassword"
+        android:hint="@string/hint_password"
+        android:layout_below="@+id/textUsername"
+        android:layout_alignStart="@+id/textUsername"
+        android:textColor="@color/text_icons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button_admin_login"
+        android:background="@drawable/button"
+        android:textColor="@color/text_primary"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignTop="@+id/button_cancel"
+        android:layout_alignStart="@+id/textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_cancel"
+        android:id="@+id/button_cancel"
+        android:background="@drawable/button_yellow"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/textview_forgot_password"
+        android:layout_alignEnd="@+id/textPassword" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sign_up"
+        android:id="@+id/button_Sign_up"
+        android:background="@drawable/button_yellow"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_cancel"
+        android:layout_margin="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="help"
+        android:id="@+id/button_help"
+        android:background="@drawable/button_yellow"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/button_cancel"
+        android:layout_alignEnd="@+id/textPassword" />
+    <TextView
+        android:id="@+id/textview_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/text_forgot_password"
+        android:layout_below="@+id/textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:textColor="@color/deep_purple_500"
+        android:clickable="true"
+         />
+
+
+</RelativeLayout>

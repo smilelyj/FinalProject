@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question_type">
+        <item>Overall</item>
+        <item>Open-Ended</item>
+        <item>Agree/Disagree</item>
+        <item>Confidence and Ability</item>
+        <item>Recommend to Others</item>
+        <item>Demographic-Age</item>
+        <item>Demographic-Grade</item>
+        <item>Demographic-Gender</item>
+        <item>Demographic-Race</item>
+        <item>Relationship</item>
+        <item>Yes/No</item>
+    </string-array>
+
+</resources>

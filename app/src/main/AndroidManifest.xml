@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.swe.android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/swe_gear_grayscale"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_label"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activities.SurveyActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity"
+                />
+        </activity>
+
+        <activity
+            android:name=".activities.SurveyResultsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminMenuActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AdminLoginActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AdminSignUpActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AdminUpdatePswdActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AdminMenuActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".activities.CreateSurveyActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ImportSurveyActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.EditSurveyActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.PreviewActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.CreateSurveyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.SurveyPoolActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.AdminMenuActivity" />
+        </activity>
+
+        <activity
+        android:name=".activities.DeploySurveyActivity"
+        android:label="@string/app_name"
+        android:parentActivityName=".activities.SurveyPoolActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|adjustResize">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.swe.android.activities.SurveyPoolActivity" />
+        </activity>
+        <activity
+        android:name=".activities.DeployedSurveyListActivity"
+        android:label="@string/app_name"
+        android:parentActivityName=".activities.AdminMenuActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|adjustResize">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.swe.android.activities.SurveyPoolActivity" />
+         </activity>
+        <activity
+            android:name=".activities.ActivationCodeGeneratorActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.AdminMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swe.android.activities.SurveyPoolActivity" />
+        </activity>
+
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:mimeType="image/*" />
+        </intent-filter><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

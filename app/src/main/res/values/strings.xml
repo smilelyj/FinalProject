@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Society of Women Engineers</string>
+    <string name="app_label">SWE</string>
+
+    <string name="action_bar_title">Survey:</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="button_take_survey_text">TAKE A SURVEY</string>
+    <string name="button_view_results_text">VIEW SURVEY RESULTS</string>
+    <string name="button_admin_login">ADMIN LOGIN</string>
+    <string name="button_create_survey">CREATE A SURVEY</string>
+    <string name="button_deploy_survey">DEPLOY A SURVEY</string>
+    <string name="button_done">DONE</string>
+    <string name="button_done_text">LOG OUT</string>
+    <string name="button_activation_code">Activation Code</string>
+
+    <string name="button_add_question_type_text">ADD A QUESTION TYPE</string>
+    <string name="button_preview_text">PREVIEW THE SURVEY</string>
+    <string name="button_edit_text">EDIT THE SURVEY</string>
+    <string name="button_next_text">ADD A NEW QUESTION</string>
+    <string name="button_save_text">SAVE THE SURVEY</string>
+    <string name="button_generate_pdf_file">GENERATE PDF FILE</string>
+
+
+    <string name="toast_please_enter_survey_id">Please enter a survey ID.</string>
+    <string name="toast_please_check_survey_question">Please check this survey question.</string>
+
+    <string name="toast_retry_enter_survey_id">Survey not found. Please ensure that you have the
+        correct survey ID and try again.</string>
+    <string name="toast_retry_enter_a_new_survey_id">This Survey ID is already existed. Please
+        set a new survey ID and try again.</string>
+    <string name="toast_retry_enter_template_id">Template not found. Please ensure that you have
+        the correct template ID and try again.</string>
+
+    <string name="toast_internet_connection_required">An internet connection is required. Please
+        ensure that you have an internet connection then try again.</string>
+    <string name="toast_survey_success">Your survey answers were successfully recorded.
+        Thank you!</string>
+    <string name="toast_survey_deploy_success">Your survey was successfully deployed.
+        Thank you!</string>
+    <string name="toast_survey_create_success">Your survey was successfully created.
+        Thank you!</string>
+    <string name="toast_update_pswd_success">Your password was successfully reset.</string>
+    <string name="toast_negative_not_saved">Your survey is not saved.</string>
+    <string name="toast_negative_not_deployed">Your survey is not deployed.</string>
+    <string name="toast_error_saving_answers">There was error when saving your survey
+        answers.</string>
+    <string name="toast_error_admin_login">Incorrect Username or password!</string>
+    <string name="toast_survey_few_questions">Your survey only contains one question,
+        please add more.</string>
+    <string name="toast_add_question_required">Please add questions first!</string>
+
+    <string name="toast_user_input_check">Please input user ID or password!</string>
+    <string name="toast_please_check_login_info">Please check your User Id or password!</string>
+    <string name="toast_please_enter_user_name">Please enter your user name.</string>
+    <string name="toast_please_enter_password">Please enter your password.</string>
+    <string name="toast_please_enter_email">Please enter your email.</string>
+    <string name="toast_please_check_email">Your email is not valid, please double check.</string>
+    <string name="toast_please_enter_new_password">Please enter your new password.</string>
+    <string name="toast_please_enter_password_again">Please enter your password again.</string>
+    <string name="toast_please_enter_activation_code">Please enter a valid activation code.</string>
+    <string name="toast_password__does_not_match">Password does not match the confirm
+        password.</string>
+    <string name="toast_select_coordinator">Coordinator role is not checked.</string>
+    <string name="toast_incorrect_activation_key">The activation code is incorrect</string>
+    <string name="toast_used_activation_key">This activation code has already been used.</string>
+    <string name="toast_userid_does_not_exist">The User Name is not existed.</string>
+    <string name="toast_userid_is_already_existed">The User Name is already existed. Please try a
+        new one.</string>
+    <string name="toast_the_code_has_expired">The activation code has expired, please contact
+        the support team.</string>
+    <string name="toast_error_saving_user">There was error when saving your user information.</string>
+    <string name="toast_sign_up_success">Your account was successfully created.</string>
+    <string name="toast_error_generate_key">There was error when generating a new activation key.</string>
+    <string name="toast_generate_key_success">A new Activation Key was successfully created.</string>
+    <string name="toast_no_survey_in_survey_pool">Survey not found, please create one first.</string>
+    <string name="external_storage_is_not_writable">External storage is not writable.</string>
+
+    <string name="button_next">Next Question</string>
+    <string name="button_submit">Submit Survey</string>
+    <string name="button_postive_button">Yes</string>
+    <string name="button_negative_button">No</string>
+    <string name="button_deploy">Deploy</string>
+    <string name="button_ok">OK</string>
+
+    <string name="hint_enter_survey_id">Enter a Survey ID</string>
+    <string name="hint_answer">Answer</string>
+    <string name="hint_explanation">Explanation</string>
+
+    <string name="fragment_question_name">QUESTION_FRAGMENT</string>
+    <string name="fragment_question_name_create">QUESTION_FRAGMENT_CREATE</string>
+
+    <string name="text_agree_strongly_agree">Percentage of users that answered \"Agree\" or
+        \"Strongly Agree\" out of %1$s questions</string>
+    <string name="text_improved">Percentage of users that answered \"Improved\" out of %1$s
+        questions</string>
+    <string name="text_yes">Percentage of users that answered \"Yes\" out of %1$s questions</string>
+    <string name="text_a_or_b">Percentage of users that answered \"A\" or \"B\" out of %1$s
+        questions</string>
+
+
+    <string name="text_question_type_open_ended">Open-Ended</string>
+    <string name="text_question_type_agree_disagree">Agree/Disagree</string>
+    <string name="text_question_type_confidence_and_ability">Confidence and Ability</string>
+    <string name="text_question_type_recommend_to_others">Recommend to Others</string>
+    <string name="text_question_type_Overall">Overall</string>
+    <string name="text_question_type_Gender">Demographic-Gender</string>
+    <string name="text_question_type_Grade">Demographic-Grade</string>
+    <string name="text_question_type_Age">Demographic-Age</string>
+    <string name="text_question_type_Relationship">Relationship</string>
+    <string name="text_question_type_Race">Demographic-Race</string>
+    <string name="text_question_type_Yes_No">Yes or No</string>
+
+
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_forgot_password_title">Forgot password</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_no_thanks">No, thanks</string>
+    <string name="text_import_questions">Need to import questions?</string>
+    <string name="text_add_description">Need to add descriptions?</string>
+    <string name="text_add">Add</string>
+    <string name="text_update_password">Update Password</string>
+    <string name="text_administrator">Administrator</string>
+    <string name="text_coordinator">Coordinator</string>
+    <string name="text_deploy">Delopy</string>
+
+    <string name="text_templateId_Core_Study_Survey">Core Student Survey</string>
+    <string name="text_templateId_Core_Adult_Survey">Core Adult - PEP Survey</string>
+    <string name="text_templateId_Core_Activity_Meter">Core Activity Meter</string>
+    <string name="text_templateIntro_Core_Study_Survey">It has a list of questions you can ask to
+        students. \n How to delete a question? Press the "preview" button and then swipe the
+        question title.</string>
+    <string name="text_templateIntro_Core_Adult_Survey">It has a list of questions you can ask to
+        parents or educators. \n How to delete a question? Press the "preview" button and then swipe the
+        question title.</string>
+    <string name="text_templateIntro_Core_Activity_Meter">It contains 4 questions and can be used to
+        quickly measure the success of a specific hands-on activity, right after it happens.
+        \n How to delete a question? Press the "preview" button and then swipe the question title.
+    </string>
+    <string name="text_activation_code">GENERATE AN ACTIVATION CODE</string>
+
+
+    <string name="hint_username">User Name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_new_password_again">Confirm New Password</string>
+    <string name="hint_add_description">Add description of the survey.</string>
+    <string name="hint_activation_code">Activation Code</string>
+    //notification
+    <string name="pleaseEnterASurveyId">Please enter a survey ID</string>
+    <string name="pleaseInsertText">Please insert the question text.</string>
+    <string name="pleaseInputUsername">Please input your username.</string>
+    <string name="pleaseInputEmail">Please input your email.</string>
+    <string name="pleaseInputNewPassword">Please input your new password.</string>
+    <string name="pleaseInputNewPasswordAgain">Please input your new password, again.</string>
+
+    <string name="simple_dialog_save_the_survey">Confirmation: Save the survey?</string>
+    <string name="simple_dialog_deployed_survey_id">The deployed survey Id is: </string>
+    <string name="simple_dialog_delete_a_question">Confirmation: Delete this question?</string>
+    <string name="dialog_message">Save the survey?</string>
+    <string name="deploy_the_survey">Deploy</string>
+    <string name="deploy_the_survey_title">Deploy this survey?</string>
+    <string name="simple_dialog_deploy_the_survey">Do you want to deploy the survey?</string>
+    <string name="toast_question_type_spinner_reminder">Please use the spinner in the
+        bottom left corner to choose a question type.</string>
+
+    <string name="admin">admin</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
